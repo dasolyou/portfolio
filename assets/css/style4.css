@@ -1,0 +1,339 @@
+@font-face { font-family: 'ghanachoco'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*pageYOffset */
+.pageYOffset {position: fixed; right: 10px; top: 10px; width: 40px; height: 40px; 
+background: rgba(0,0,0,0.3); color: #fff; line-height: 40px; text-align: center; z-index: 1000;}
+
+/* background: rgb(255, 170, 0); */
+/* layout */
+#header {height: 100vh;  background: #724998; overflow: hidden;}
+#section1 {height: 50000px; background: rgb(236, 133, 115); overflow: hidden;}
+#section2 {height: 9000px; background: rgb(15,166,237); overflow: hidden;}
+#section3 {height: 5000px; background: rgb(17, 158, 94); overflow: hidden;}
+#section4 {height: 7000px; background: rgb(47, 139, 193); overflow: hidden;}
+#section5 {height: 6000px; background: #724998; overflow: hidden;}
+
+
+/* header */
+/* #header {position: fixed; left: 20px; top: 20px; z-index: 10000;}
+#header h1 {font-size: 34px; color: #fff; font-family: 'S-CoreDream-2ExtraLight';} */
+
+/* header */
+.header {position: relative; width: 100vw; height: 100vh; z-index: 10000;}
+.header h1 {position: absolute; width: 100vw; height: 100vh; font-size: 7vw; text-align: center; line-height: 100vh; color: #fff; font-family: 'S-CoreDream-2ExtraLight';}
+
+/* menu */
+/* .menu_wrap {position: fixed; width: 20vw; height: 100vh; left: 35px; top: 70px; z-index: 10000;}
+.menu_wrap .line {position: absolute; width: 4px; height: 88vh; left: 0; top: 0; border-radius: 3px; background: #fff;}
+.menu_wrap .line .inner_line {position: absolute; width: 4px; height: 88vh; left: 0; top: 0; border-radius: 3px; background: #fff; opacity: 0.2;}
+.menu_wrap .menu {position: absolute; left: 30px; top: 10vh;}
+.menu_wrap .menu .text {position: relative; font-size: 13px; margin-left: 10px; color: #fff; font-family: 'S-CoreDream-2ExtraLight';}
+.menu_wrap .menu .text .circle {position: absolute; width: 15px; height: 15px; left: -20px; top: 50%; transform: translateY(-50%); border-radius: 50%; background: #fff;} */
+
+
+/* sec1 */
+.sec1 {text-align: center;}
+.sec1 .text-wrap {
+  padding-top: 40vh;
+  font-size: 8vw; font-family: 'Malssami815';
+  color: #fff; 
+}
+/* .sec1 .text-wrap .text {width: 100vw; height: 100vh; text-align: center; line-height: 100vh; background: rgb(236, 133, 115);} */
+.sec1 .text-wrap .text1 {position: relative; display: inline-block; z-index: 60;}
+
+/* text2 */
+.sec1 .text-wrap .text2 { width: 56.8%;
+  font-size: 10vw; position: relative; display: inline-block; z-index: 50;
+}
+.sec1 .text-wrap .text2 .circle1 {
+  position: absolute; top: 3vw; left: 30.5vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text2 .circle2 {
+  position: absolute; top: 10vw; left: 36.25vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+  
+}
+.sec1 .text-wrap .text2 .line {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 8px; background: #fff;
+  border-radius: 5px;
+}
+/* text3 */
+.sec1 .text-wrap .text3 {
+ position: relative; display: inline-block; z-index: 40;
+}
+.sec1 .text-wrap .text3 .circle1 {
+  position: absolute; top: 2vw; left: 3vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle2 {
+  position: absolute; top: 2.5vw; left: 8vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle3 {
+  position: absolute; top: 1.8vw; left: 17vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle4 {
+  position: absolute; top: 2vw; left: 22.2vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .line {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 8px; background: #fff;
+  border-radius: 5px;
+}
+/* text4 */
+.sec1 .text-wrap .text4 {
+  position: relative; display: inline-block; z-index: 30;
+}
+.sec1 .text-wrap .text4 > span {display: inline-block;}
+/* text5 */
+.sec1 .text-wrap .text5 {
+  font-size: 10vw; display: inline-block; background: rgb(236, 133, 115);
+  width: 75vw; height: 60vw; border-radius: 60% 43% 43% 60%/ 50% 50% 50% 50% ;
+  text-align: center; line-height: 63vw; z-index: 20;
+}
+.sec1 .text-wrap .balloon::before {
+  content: ''; 
+  position: absolute; left: -10vw; top: 22vw;
+  width: 0; height: 0; border-radius: 2vw;
+  border-top: 9vw solid transparent;
+  border-left: 18vw solid rgb(236, 133, 115);
+  border-bottom: 9vw solid transparent;
+} 
+.sec1 .text-wrap .balloon::after {
+  content: ''; width: 1.3vw; height: 9vw;
+  position: absolute; left: -1vw; top: 26.4vw;
+  background: #fff; z-index: 10;
+}
+.sec1 .text-wrap .text5 .name {position: relative;}
+.sec1 .text-wrap .text5 .line {
+  position: absolute; left: 0; top: -1vw; 
+  width: 100%; height: 8px; background: #fff;
+  border-radius: 5px;
+}
+.sec1 .text-wrap .text5 .line2 {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 8px; background: #fff;
+  border-radius: 5px;
+}
+
+
+/* section2 */
+.sec2 .img {
+  background-image : url(../img/sky.png);
+  background-repeat : no-repeat;
+  background-size : cover;
+  width: 100%; height: 100vh; z-index: 5;
+}
+.sec2 .img .bg_square {width: 100vw; height: 100vh; background: #01baef;}
+
+/* shape_common(except position) */
+.sec2 { }
+.sec2 .bg_wrap {height: 100vh;}
+.sec2 .bg_wrap .banner {width: 105vw;}
+.sec2 .bg_wrap .banner .shape {width: 105vw; height: 50vh;}
+.sec2 .bg_wrap .banner .shape .square {width: 105vw; height: 50vh; background: #ff694f;}
+.sec2 .bg_wrap .banner .shape .hole {width: 1vw; height: 1vw;border-radius: 50%; background: #fff;}
+.sec2 .bg_wrap .banner .shape .hole::before {content: ''; width: 1.3vw; height: 3px;border-radius: 30%; background: #fff;}
+.sec2 .bg_wrap .banner .shape .hole::after {content: ''; width: 1.3vw; height: 3px; border-radius: 30%; background: #fff;}
+.sec2 .bg_wrap .banner .shape .string {width: 14vw; height: 3px; border-radius: 30%; background: #fff;}
+
+/* top */
+.sec2 .bg_wrap .top_wrap {z-index: 50;}
+.sec2 .bg_wrap .top { position: relative; width: 130vw; height: 50vh;}
+.sec2 .bg_wrap .top .banner {position: absolute; right: -50vw; top: 0;}
+.sec2 .bg_wrap .top .banner .shape {position: relative;}
+.sec2 .bg_wrap .top .banner .shape .square {position: absolute; left: 0; top: 0; background: #ff694f;}
+.sec2 .bg_wrap .top .banner .shape .hole {position: absolute; left: 1vw; top: 24.5vh;}
+.sec2 .bg_wrap .top .banner .shape .hole::before {position: absolute; left: -1vw; top: 0; }
+.sec2 .bg_wrap .top .banner .shape .hole::after {position: absolute; left: -1vw; bottom: 0; }
+.sec2 .bg_wrap .top .banner .shape .string {position: absolute; left: -14vw; top: 25.5vh;}
+
+.sec2 .bg_wrap .top .air_name {position: absolute; right: 69vw; top: 12vh;}
+.sec2 .bg_wrap .top .air_name .airplane_wrap {position: relative; width: 15vw; height: 15vw;}
+.sec2 .bg_wrap .top .air_name .airplane_wrap svg {
+    width: 15vw; height: 15vw; 
+    -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH";
+}
+.sec2 .bg_wrap .top .air_name .airplane_wrap .name {position: absolute; width: 8vw; left: 50%; top: 50%; transform: translate(-40%,-80%); font-size: 1.5vw; font-family: 'Malssami815'; color: #fff;}
+
+
+/* bottom */
+.sec2 .bg_wrap .bottom_wrap {z-index: 30;}
+.sec2 .bg_wrap .bottom { position: relative; width: 130vw; height: 50vh;}
+.sec2 .bg_wrap .bottom .banner {position: absolute; left: -50vw; top: 0;}
+.sec2 .bg_wrap .bottom .banner .shape {position: relative;}
+.sec2 .bg_wrap .bottom .banner .shape .square {position: absolute; right: 0; top: 0; background: #0fa6ed;}
+.sec2 .bg_wrap .bottom .banner .shape .hole {position: absolute; right: 1vw; top: 24.5vh;}
+.sec2 .bg_wrap .bottom .banner .shape .hole::before {position: absolute; right: -1vw; top: 0; }
+.sec2 .bg_wrap .bottom .banner .shape .hole::after {position: absolute; right: -1vw; bottom: 0; }
+.sec2 .bg_wrap .bottom .banner .shape .string {position: absolute; right: -14vw; top: 25.5vh}
+.sec2 .bg_wrap .bottom .air_name {position: absolute; left: 69vw; top: 12vh;}
+.sec2 .bg_wrap .bottom .air_name .airplane_wrap {position: relative; width: 15vw; height: 15vw;}
+.sec2 .bg_wrap .bottom .air_name .airplane_wrap svg {width: 15vw; height: 15vw;}
+.sec2 .bg_wrap .bottom .air_name .airplane_wrap .name {position: absolute; width: 8vw; left: 50%; top: 50%; transform: translate(-60%,-80%); font-size: 1.5vw; font-family: 'Malssami815'; color: #fff;}
+
+
+/* about */
+.sec2 .about {font-size: 9vw; position: absolute; left: 10vw; top: 1vw; color: #fff; font-family: 'Malssami815'; z-index: 75;}
+
+/* ability */
+.sec2 .ability_wrap {position: relative; width: 100vw; height: 100vh; z-index: 70;}
+.sec2 .ability_wrap .img_wrap {}
+.sec2 .ability_wrap .img_wrap .circle {position: absolute; width: 26vw; height: 30vw; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 60%; background: #ffc219;}
+.sec2 .ability_wrap .img_wrap .circle .img {position: absolute; width: 20vw; height: 33vw; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url(../img/center.png) no-repeat; background-size: cover;}
+.sec2 .ability_wrap .img_wrap .circle .img2 {position: absolute; width: 17vw; height: 38vw; left: 50%; top: 50%; transform: translate(-50%, -50%); background: url(../img/center2.png) no-repeat; background-size: cover;}
+
+.sec2 .ability_wrap .balloon {position: relative; font-size: 1.6vw; width: 10vw; height: 20vw; text-align: center; line-height: 4vw; display: block; z-index: 90;}
+.sec2 .ability_wrap .balloon svg {width: 10vw; height: 12vw;}
+
+
+.sec2 .ability_wrap .balloon .text_wrap {position: absolute; left: 50%; top: -10%; transform: translate(-50%, 0);}
+.sec2 .ability_wrap .balloon .text_wrap .text {font-size: 1.5vw; font-weight: bold; color: #fff; font-family: 'S-CoreDream-2ExtraLight';}
+.sec2 .ability_wrap .balloon .text_wrap .text em {display: inline-block; }
+
+.sec2 .ability_wrap .balloon .text_wrap2 {position: absolute; left: 50%; top: -10%; transform: translate(-50%, 0);}
+.sec2 .ability_wrap .balloon .text_wrap2 .text {font-size: 1.5vw; font-weight: bold; color: #fff; font-family: 'S-CoreDream-2ExtraLight';}
+.sec2 .ability_wrap .balloon .text_wrap2 .text em {display: inline-block;}
+
+/* section3 */
+.sec3 {position: relative;}
+.sec3 .site_wrap {width: 100vw; height: 100vh; position: relative; overflow: hidden; background: rgb(17, 158, 94);}
+.sec3 .site_wrap .site0 {position: relative; float: left; width: 100vw; height: 100vh; color: #fff; font-family: 'S-CoreDream-2ExtraLight'; background: rgb(17, 158, 94); z-index: 70;}
+.sec3 .site_wrap .site0 .title {position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 9vw; font-family: 'Malssami815'; color: #fff;}
+.sec3 .site_wrap .site0 .title .circle {
+  position: absolute; left: 12.5vw; top: 3vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 1000;
+}
+.sec3 .site_wrap .site0 .line {
+  position: absolute; left: 0; bottom: 0; 
+  width: 60vw; height: 8px; background: #fff;
+  border-radius: 5px; z-index: 1000;
+}
+
+.sec3 .site_wrap .site {position: relative; float: left; width: 100vw; height: 100vh; color: #fff; font-family: 'S-CoreDream-2ExtraLight'; background: rgb(17, 158, 94); z-index: 70;}
+.sec3 .site_wrap .site .img {display: inline-block; position: absolute; left: 7vw; top: 50%; transform: translatey(-50%);}
+.sec3 .site_wrap .site .img img {width: 35vw; height: 25vw;}
+.sec3 .site_wrap .site .num {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 26vw; opacity: 0.1; }
+
+.sec3 .site_wrap .site .text_wrap {display: inline-block; position: relative; width: 60vw; height: 100vh; margin-left: 27vw; text-align: right;}
+.sec3 .site_wrap .site .text_wrap h2 {position: absolute; right: 0; top: 14%; width: 50vw; font-size: 6vw; font-weight: bold; }
+.sec3 .site_wrap .site .text_wrap p {position: absolute; right: 0; top: 43%; width: 35vw; font-size: 1.3vw;}
+.sec3 .site_wrap .site .text_wrap .btn {}
+.sec3 .site_wrap .site .text_wrap .btn a {display: block; width: 8.5vw; height: 2vw; position: absolute; right: 0; bottom: 18%; text-align: center; line-height: 2vw; border: 2px solid #fff; border-radius: 3px; font-size: 1vw; color: #fff;}
+
+.sec3 .site_wrap .site .circle {position: absolute; left: -1vw; top: 35.4%; width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 1000;}
+.sec3 .site_wrap .site .line {position: absolute; left: 0%; top: 36%; width: 100vw; height: 8px; background: #fff; z-index: 1000;}
+.sec3 .site_wrap .site1 {z-index: 50;}
+.sec3 .site_wrap .site2 {z-index: 50;}
+.sec3 .site_wrap .site3 {z-index: 50;}
+
+.sec3 .site_wrap .square {width: 100vw; height: 100vh; background: rgb(17, 158, 94);}
+.sec3 .site_wrap .square .circle {position: absolute; left: -1vw; top: 35.4%; width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 1000;}
+
+
+
+
+/* section4 */
+.sec4 {position: relative;}
+.sec4 .title_wrap {position: relative; width: 100vw; height: 100vh; font-size: 9vw; color: #fff; font-family: 'Malssami815'; z-index: 60;}
+.sec4 .title_wrap .square {position: relative; width: 100vw; height: 50vh; background: #3a8bbb;}
+.sec4 .title_wrap .square1 {}
+.sec4 .title_wrap .square1 .tit {position: absolute; left: 23vw; bottom: 2vh;}
+.sec4 .title_wrap .square1 .line {position: absolute; width: 100%; height: 5px; left: 0; bottom: 0; background: #fff; z-index: 65;}
+.sec4 .title_wrap .square2 {}
+.sec4 .title_wrap .square2 .tit {position: absolute; left: 35vw; top: 1vh;}
+.sec4 .title_wrap .square2 .line {position: absolute; width: 100%; height: 5px; left: 0; top: 0; background: #fff; z-index: 65;}
+
+.sec4 .title_wrap .totoro_wrap {position: absolute; left: 2vw; top: 33vh; z-index: 70;}
+.sec4 .title_wrap .totoro_wrap .circle {width: 7vw; height: 8vw; border-radius: 50% 50% 50% 50% / 60% 60% 45% 45%; background: #666;}
+
+/* ani_wrap */
+.sec4 .ani_wrap {z-index: 55;}
+.sec4 .ani_wrap .ani {width: 100vw; height: 100vh; display: flex;  align-items: center; justify-content: center; flex-direction: row; background: rgb(47, 139, 193);}
+.sec4 .ani_wrap .ani .work_wrap {position: relative; width: 32vw; height: 32vw; margin-bottom: 8vh; border: 3px solid #fff; border-radius: 50%; background: transparent;}
+.sec4 .ani_wrap .ani .work_wrap .work  {position: absolute; left: 1vw; top: 1vw; width: 30vw; height: 30vw; border-radius: 50%; background: #fff;}
+
+.sec4 .ani_wrap .ani .des {position: relative; width: 25vw; height: 20vh; margin: 0 10vw 8vh 4vw; font-size: 1.5vw; font-family: 'S-CoreDream-2ExtraLight'; color: #fff; text-align: right;}
+.sec4 .ani_wrap .ani .des .text {}
+.sec4 .ani_wrap .ani .des .line {position: absolute; width: 29vw; height: 3px; left: -4vw; top: 10vh; background: #fff; border-radius: 5px;}
+.sec4 .ani_wrap .ani .des .btn {}
+.sec4 .ani_wrap .ani .des .btn a {display: block; position: absolute; width: 8.5vw; height: 2vw; right: 0; bottom: 0; border: 2px solid #fff; border-radius: 3px; text-align: center; font-size: 1vw; line-height: 2vw; font-family: 'S-CoreDream-2ExtraLight'; color: #fff; box-sizing: border-box;}
+
+/* ani2, 4 */
+.sec4 .ani_wrap .ani2 .work_wrap {margin-bottom: 8vh;}
+.sec4 .ani_wrap .ani2 .des {margin: 0 4vw 8vh 10vw; text-align: left;}
+.sec4 .ani_wrap .ani2 .des .line {position: absolute; left: 0; top: 10vh;}
+.sec4 .ani_wrap .ani2 .des .btn a {position: absolute; left: 0; bottom: 0;}
+.sec4 .ani_wrap .ani4 .work_wrap {margin-top: 8vh; margin-bottom: 0;}
+.sec4 .ani_wrap .ani4 .des {margin: 8vh 10vw 0 4vw;}
+
+.sec4 .ani_wrap .ani1 {}
+.sec4 .ani_wrap .ani2 {}
+.sec4 .ani_wrap .ani3 {}
+.sec4 .ani_wrap .ani4 {}
+
+/* section5 */
+.sec5 {}
+.sec5 .js_wrap .title_wrap {position: relative; width: 100vw; height: 100vh; font-size: 9vw; color: #fff; font-family: 'Malssami815'; background: #724998;}
+.sec5 .js_wrap .title_wrap .square1 {position: absolute; width: 30vw; height: 70vh; right: 50%; top: 15vh; line-height: 70vh; text-align: right; background: #724998; z-index: 150;}
+.sec5 .js_wrap .title_wrap .square2 {position: absolute; width: 30vw; height: 70vh; left: 50%; top: 15vh; line-height: 70vh; text-align: left; background: #724998; z-index: 150;}
+.sec5 .js_wrap .title_wrap .paper {position: absolute; width: 70vw; height: 70vh; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; line-height: 70vh; -webkit-text-fill-color: transparent; -webkit-text-stroke: 3px rgb(255, 255, 255); background: rgb(114, 73, 152); z-index: 110;}
+
+.sec5 .js_wrap {position: relative; height: 100vh; background: #222;}
+.sec5 .js_wrap .js {width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: row;}
+
+.sec5 .js_wrap .js .paper {position: absolute; width: 30vw; height: 70vh; border-radius: 5px; left: 15vw; top: 15vh;}
+
+/* spring_wrap */
+.sec5 .js_wrap .js .paper .spring_wrap {position: absolute; left: 1vw; top: -1.2vw; display: flex; align-items: center; justify-content: center; flex-direction: row;}
+.sec5 .js_wrap .js .paper .spring_wrap .spring {position: relative; width: 2vw; height: 2.5vw; border: 3px solid #000; margin: 0 1.3vw; border-right: transparent; border-bottom: transparent; border-radius: 60%; background: transparent; z-index: 130;}
+.sec5 .js_wrap .js .paper .spring_wrap .spring::after {content: ''; position: absolute; left: 0.3vw; bottom: -0.5vw; width: 1vw; height: 1vw; border-radius: 50%; background: #888; opacity: 0.3; z-index: 120;}
+
+/* work_wrap */
+.sec5 .js_wrap .js .work_wrap {position: relative; width: 30vw; height: 70vh; margin-right: 10vw;}
+.sec5 .js_wrap .js .work_wrap .work {position: absolute; left: 0; top: 0; width: 30vw; height: 70vh; border-radius: 5px; background: #fff;}
+.sec5 .js_wrap .js .work_wrap .work .paper{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-47%); width: 25vw; height: 60vh; background: #000; color: #fff;}
+
+.sec5 .js_wrap .js .work_wrap .work0 {position: absolute; text-align: center; line-height: 70vh; font-size: 9vw; font-family: 'Malssami815'; -webkit-text-fill-color: transparent; -webkit-text-stroke: 3px #724998; background: #fff;}
+.sec5 .js_wrap .js .work_wrap .work0 .text {position: absolute; width: 70vw; height: 70vh; left: 0; top: 0; transform: scaleX(0.429); transform-origin: left; z-index: 110;}
+
+/* des_wrap */
+.sec5 .js_wrap .js .des_wrap {position: relative; width: 30vw; height: 70vh;}
+.sec5 .js_wrap .js .des_wrap .pencil {position: absolute; left: -2vw; top: -2vw; z-index: 120;}
+.sec5 .js_wrap .js .des_wrap .pencil .sharp {width: 0; height: 0; 
+  border-left: 1vw solid transparent; border-right: 1vw solid transparent; border-bottom: 2vw solid #fff;}
+.sec5 .js_wrap .js .des_wrap .pencil .body {width: 2vw; height: 70vh; border-radius: 0 0 8px 8px; background: #b1faee;}
+.sec5 .js_wrap .js .des_wrap .des {position: absolute; left: 0; top: 0; width: 30vw; height: 70vh; background: #fff;}
+
+
+.sec5 .js_wrap .js .work_wrap .work0 {z-index: 110;}
+.sec5 .js_wrap .js .work_wrap .work1 {z-index: 100;}
+.sec5 .js_wrap .js .work_wrap .work2 {z-index: 90;}
+.sec5 .js_wrap .js .work_wrap .work3 {z-index: 80;}
+.sec5 .js_wrap .js .work_wrap .work4 {z-index: 70;}
+
+
+
+
+
+
+
+
+
+
+
+/* mediaQuery */
+@media (max-width: 1420px){
+  .container {width: 100%;}
+}
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/test.css">
+    <link rel="stylesheet" href="assets/css/ani.css">
+    <link rel="stylesheet" href="assets/css/js.css">
+    
+    <!-- webfonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<body>
+   
+    <div class="js js2">
+        <div class="js_work js_work2">
+            <div class="work">
+                <div class="arrow_wrap">
+                    <div class="arrow prev"></div>
+                    <div class="arrow next"></div>
+                </div>
+                <div class="box_wrap">
+                    <div class="box">
+                        <div class="slide showing"><img src="assets/img/spain1.jpg" class="image"></div>
+                        <div class="slide"><img src="assets/img/spain2.jpg" class="image"></div>
+                        <div class="slide"><img src="assets/img/spain3.jpg" class="image"></div>
+                        <div class="slide"><img src="assets/img/spain4.jpg" class="image"></div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="dot_wrap">
+                        <div class="dot showing"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <button class="auto" type="button">Auto</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const box = document.querySelector('.box');
+        const slide = Array.from(document.querySelectorAll('.slide'));
+        const pagination = document.querySelector('.pagination');
+        const dot = Array.from(document.querySelectorAll('.dot'));
+
+        const moveSlide = (currentSlide, targetSlide, oppasiteSlide) => {
+            if(currentSlide){
+                currentSlide.classList.remove('showing');
+                if(targetSlide){
+                    targetSlide.classList.add('showing');
+                } else {
+                    oppasiteSlide.classList.add('showing');
+                }
+            }
+        }
+        const moveDot = (currentDot, targetDot, oppasiteDot) => {
+            if(currentDot){
+                currentDot.classList.remove('showing');
+                if(targetDot){
+                    targetDot.classList.add('showing');
+                } else {
+                    oppasiteDot.classList.add('showing');
+                }
+            }
+        }
+
+        const moveToNext = () => {
+            var currentSlide = document.querySelector('.box .showing');
+            var nextSlide = currentSlide.nextElementSibling;
+            var firstSlide = document.querySelector('.slide:first-child');
+            var currentDot = document.querySelector('.dot_wrap .showing');
+            var nextDot = currentDot.nextElementSibling;
+            var firstDot = document.querySelector('.dot:first-child');
+
+            moveSlide(currentSlide, nextSlide, firstSlide);
+            moveDot(currentDot, nextDot, firstDot);
+        }
+
+        const moveToPrev = () => {
+            var currentSlide = document.querySelector('.box .showing');
+            var prevSlide = currentSlide.previousElementSibling;
+            var lastSlide = document.querySelector('.slide:last-child');
+            var currentDot = document.querySelector('.dot_wrap .showing');
+            var prevDot = currentDot.previousElementSibling;
+            var lastDot = document.querySelector('.dot:last-child');
+
+            moveSlide(currentSlide, prevSlide, lastSlide);
+            moveDot(currentDot, prevDot, lastDot);
+        }
+
+        const clickPagination = (e) => {
+            var clickedDot = e.target.closest('.dot');
+            if(!clickedDot) return;
+
+            var currentSlide = document.querySelector('.box .showing');
+            var currentDot = document.querySelector('.dot_wrap .showing');
+            var clickedDotIndex = dot.findIndex(dot => dot === clickedDot);
+            var clickedSlide = slide[clickedDotIndex]
+            var lastSlide = document.querySelector('.slide:last-child');
+            var lastDot = document.querySelector('.dot:last-child');
+
+            moveSlide(currentSlide, clickedSlide, lastSlide);
+            moveDot(currentDot, clickedDot, lastDot);
+        }
+
+        const imgsliderInit = () => {
+            nextBtn.addEventListener('click', moveToNext);
+            prevBtn.addEventListener('click', moveToPrev);
+            pagination.addEventListener('click', clickPagination);
+        }
+        imgsliderInit();
+
+        // setInterval(moveToNext, 2000)
+    
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!-- https://calexo.co/ -->

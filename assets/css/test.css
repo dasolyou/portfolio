@@ -1,0 +1,36 @@
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Cafe24Simplehae'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-1Thin'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff'); } 
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff'); } .lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
+@font-face { font-family: 'Cafe24Ohsquare'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+p {
+    margin:1em 0;
+}
+.js2 {background: #000;}
+.js2 .js_work2 {position: absolute; width: 39vw; height: 53vh; left: 50%; top: 50%; transform: translate(-41%,-50%);background: #000;}
+
+.js2 .js_work2 .work {position: relative; width: 39vw; height: 53vh; z-index: 5210;}
+.js2 .js_work2 .work .arrow_wrap {position: relative; width: 39vw; height: 53vh;}
+.js2 .js_work2 .work .arrow_wrap .arrow {opacity: 0.8; cursor: pointer; transition: all 300ms ease;}
+.js2 .js_work2 .work .arrow_wrap .prev {position: absolute; left: 0.5vw; top: 23vh; width: 0; height: 0; border-top: 0.7vw solid transparent; border-right: 1vw solid #fff; border-bottom: 0.7vw solid transparent;}
+.js2 .js_work2 .work .arrow_wrap .prev:hover {opacity: 1;}
+.js2 .js_work2 .work .arrow_wrap .next {position: absolute; right: 0.5vw; top: 23vh; width: 0; height: 0; border-top: 0.7vw solid transparent; border-left: 1vw solid #fff; border-bottom: 0.7vw solid transparent;}
+.js2 .js_work2 .work .arrow_wrap .next:hover {opacity: 1;}
+
+.js2 .js_work2 .work .box_wrap {position: absolute; width: 33vw; height: 48vh; left: 50%; top: 0; transform: translate(-50%,0%); overflow: hidden;}
+.js2 .js_work2 .work .box_wrap .box {position: relative; width: 100%; height: 100%; overflow: hidden;}
+.js2 .js_work2 .work .box_wrap .box .slide {position: absolute; width: 100%; height: 100%; top: 0; z-index: 5220; opacity: 0; transform: scale(0.9); transition: all 0.5s ease-in-out;}
+.js2 .js_work2 .work .box_wrap .box .slide.showing {z-index: 5225; opacity: 1; transform: none;}
+.js2 .js_work2 .work .box_wrap .box .slide .image {width: 100%; height: 100%; }
+
+.js2 .js_work2 .work .pagination {}
+.js2 .js_work2 .work .pagination .dot_wrap {position: absolute; bottom: 0vh; left: 50%; transform: translateX(-50%); display: flex;}
+.js2 .js_work2 .work .pagination .dot_wrap .dot {margin: 0 0.5vw; width: 0.8vw; height: 0.8vw; border-radius: 50%; background: #fff; opacity: 0.8; cursor: pointer; transition: all 300ms ease;}
+.js2 .js_work2 .work .pagination .dot_wrap .dot:hover {opacity: 1;}
+.js2 .js_work2 .work .pagination .dot_wrap .dot.showing {opacity: 1;}
+

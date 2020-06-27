@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+    <!-- webfonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="pageYOffset">
+        0
+    </div>
+   
+    <header id="header">
+        <h1>유다솔 포폴!</h1>
+    </header>
+    <!-- //header -->
+   
+    <div id="contents">
+        <div id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <div class="text-wrap">
+                        <span class="text1">안녕하세요! <span class="line"
+                            data-0="width: 0%"
+                            data-500="width: 100%"
+                        ></span></span>
+                        <span class="text2"
+                            data-200 = "opacity: 0; transform: rotate(-180deg); "
+                            data-500 = "opacity: 1; transform: rotate(0deg); ">웹 퍼블리셔를
+                               <span class="line"
+                                data-500="width: 0%"
+                                data-800="width: 100%"
+                            ></span></span>
+                        <div class="text3"
+                            data-0 = "opacity: 0; transform: rotate(-15deg); "
+                            data-150 = "opacity: 0; transform: rotate(0deg); "
+                        >준비하는</div>
+                        <div class="text4">창의적인</div>
+                        <div class="text5">유다솔입니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section2"></div>
+        <div id="section3"></div>
+        <div id="section4"></div>
+        <div id="section5"></div>
+        <div id="section6"></div>
+    </div>
+    
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        window.addEventListener("scroll", () => { 
+            let pageYOffset = (window.pageYOffset || document.documentElement.scrollTop);
+            
+            document.querySelector(".pageYOffset").textContent = pageYOffset;
+        });
+    
+    </script>
+    
+</body>
+</html>
+
+
+
+
+<!-- https://calexo.co/ -->
+
+
+
+
+
+
+
+
+
+

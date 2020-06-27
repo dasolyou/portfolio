@@ -1,0 +1,42 @@
+/* todolist */
+.js_work1 {}
+/* background: url(../img/1.png) no-repeat; background-size: cover; */
+.game .js1 .js_work1 .work {position: relative; width: 100%; height: 100%; text-align: center; color: #fff;}
+.game .js1 .js_work1 .work .clock > h1 {position: absolute; left: 50%; top: 20%; transform: translate(-50%,0%); font-size: 4vw; line-height: 5vw; margin: 0; text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.75);}
+.game .js1 .js_work1 .work .weather {width: 90vw; font-size: 2vw; line-height: 3vw; font-weight: bold;}
+.game .js1 .js_work1 .work input {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border: none; width: 20vw; height: 5vh; border-bottom: 2px solid white; text-align: center; background-color: transparent;}
+.game .js1 .js_work1 .work input::placeholder {color: #fff; font-size: 1vw;}
+.game .js1 .js_work1 .work .toDoList {position: absolute; left: 50%; top: 60%; transform: translate(-50%,0%); width: 20vw; padding: 0 20vw; text-align: left;}
+.game .js1 .js_work1 .work button {cursor: pointer; background-color: #ecf0f1; border: 1px solid #cbcecf; border-radius: 10px; padding: 5px 10px; margin-right: 10px;}
+.game .js1 .js_work1 .work ul, li {list-style: none;}
+.game .js1 .js_work1 .bgImage {position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 1vw; z-index: -1; animation: fadeIn 0.5s linear;}
+
+/* .sec5 .js_wrap .game .js {position: relative; width: 60vw; height: 70vh;} */
+/* .sec5 .js_wrap .game .js2 .js_work2 td {margin: 0vw; width: 6vw; height: 6vw; text-align: center; font-weight: bold; font-size: 1.5vw; border: 0.1vw solid #fff; box-sizing: border-box; color: #fff;}
+.sec5 .js_wrap .game .js2 .js_work2 .result {position: absolute; width: 18vw; height: 3vw; left: 0%; top: 86%; transform: translate(-0%,0%); border: 0.1vw solid #fff; text-align: center; line-height: 3vw; font-size: 1.5vw; color: #fff;} */
+
+.game {position: absolute; width: 50vw; height: 300vh; left: 0vw; top: 30vh; background-repeat: repeat; background-color: #724998; background-image: linear-gradient(to bottom, transparent, transparent 10%, #724998 10%), linear-gradient(to right, #000, #000 10%, #724998 10%); background-size: 10px 10px; z-index: 5200;}
+.game .js {position: relative; width: 50vw; height: 75vh; }
+.game .js2 .js_work2 {position: absolute; width: 39vw; height: 53vh; left: 50%; top: 50%; transform: translate(-41%,-50%);}
+
+.game .js2 .js_work2 .work {position: relative; width: 39vw; height: 53vh; z-index: 5210;}
+.game .js2 .js_work2 .work .arrow_wrap {position: relative; width: 39vw; height: 53vh;}
+.game .js2 .js_work2 .work .arrow_wrap .arrow {opacity: 0.6; cursor: pointer; transition: all 300ms ease;}
+.game .js2 .js_work2 .work .arrow_wrap .prev {position: absolute; left: 0.5vw; top: 23vh; width: 0; height: 0; border-top: 0.7vw solid transparent; border-right: 1vw solid #fff; border-bottom: 0.7vw solid transparent;}
+.game .js2 .js_work2 .work .arrow_wrap .prev:hover {opacity: 1;}
+.game .js2 .js_work2 .work .arrow_wrap .next {position: absolute; right: 0.5vw; top: 23vh; width: 0; height: 0; border-top: 0.7vw solid transparent; border-left: 1vw solid #fff; border-bottom: 0.7vw solid transparent;}
+.game .js2 .js_work2 .work .arrow_wrap .next:hover {opacity: 1;}
+
+.game .js2 .js_work2 .work .box_wrap {position: absolute; width: 33vw; height: 48vh; left: 50%; top: 0; transform: translate(-50%,0%); overflow: hidden;}
+.game .js2 .js_work2 .work .box_wrap .box {position: relative; width: 100%; height: 100%; border-radius: 2vw; overflow: hidden;}
+.game .js2 .js_work2 .work .box_wrap .box .slide {position: absolute; width: 100%; height: 100%; top: 0; z-index: 5220; opacity: 0; transform: scale(0.9); transition: all 0.5s ease-in-out;}
+.game .js2 .js_work2 .work .box_wrap .box .slide.showing {z-index: 5225; opacity: 1; transform: none;}
+.game .js2 .js_work2 .work .box_wrap .box .slide .image {width: 100%; height: 100%; }
+
+.game .js2 .js_work2 .work .pagination {}
+.game .js2 .js_work2 .work .pagination .dot_wrap {position: absolute; bottom: 0vh; left: 50%; transform: translateX(-50%); display: flex;}
+.game .js2 .js_work2 .work .pagination .dot_wrap .dot {margin: 0 0.5vw; width: 0.8vw; height: 0.8vw; border-radius: 50%; background: #fff; opacity: 0.6; cursor: pointer; transition: all 300ms ease;}
+.game .js2 .js_work2 .work .pagination .dot_wrap .dot:hover {opacity: 1;}
+.game .js2 .js_work2 .work .pagination .dot_wrap .dot.showing {opacity: 1;}
+
+.game .js2 .js_work2 .work button.auto {position: absolute; width: 2vw; height: 1vw; right: 0; bottom: 0; border: 0.3vw solid #fff; background: transparent; color: #fff;}

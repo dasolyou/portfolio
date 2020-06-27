@@ -1,0 +1,304 @@
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff'); } 
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff'); } .lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
+@font-face { font-family: 'Recipekorea'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'InfinitySans-RegularA1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'InfinitySans-BoldA1'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*pageYOffset */
+.pageYOffset {position: fixed; right: 10px; top: 10px; width: 40px; height: 40px; 
+background: rgba(0,0,0,0.3); color: #fff; line-height: 40px; text-align: center; z-index: 1000;}
+
+/* layout */
+#cover {height: 100vh; background: #724998; overflow: hidden;}
+#section1 {height: 15000px; background: rgb(236, 133, 115); overflow: hidden;}
+#section2 {height: 10000px; background-repeat: repeat; background-color: #2f8bc1; background-image: linear-gradient(to bottom, transparent, transparent 10%, #2f8bc1 10%), linear-gradient(to right, #000, #000 10%, #2f8bc1 10%); background-size: 10px 10px; overflow: hidden;}
+#section3 {height: 10000px; background: rgb(17, 158, 94); overflow: hidden;}
+#section4 {height: 15000px; background: rgb(47, 139, 193); overflow: hidden;}
+#section5 {height: 6000px; background: #724998; overflow: hidden;}
+
+
+/* header */
+#header {position: fixed; left: 2vw; top: 20px; z-index: 10000;}
+#header h1 {font-size: 2vw; color: rgb(255, 255, 255); font-family: 'S-CoreDream-2ExtraLight';}
+
+/* menu */
+.menu_wrap {position: relative; z-index: 10000;}
+.menu_wrap .menu1 {position: absolute; left: 0px; top: 50%; transform: translate(0vw, -40vh);}
+.menu_wrap .menu2 {position: absolute; left: 0px; top: 50%; transform: translate(0, -37vh);}
+.menu_wrap .menu3 {position: absolute; left: 0px; top: 50%; transform: translate(0, -34vh);}
+.menu_wrap .menu4 {position: absolute; left: 0px; top: 50%; transform: translate(0, -31vh);}
+.menu_wrap .menu5 {position: absolute; left: 0px; top: 50%; transform: translate(0, -28vh);}
+
+.menu_wrap .menu {position: relative; width: 30vw; height: 5vh;}
+.menu_wrap .menu .circle {position: absolute; width: 0.8vw; height: 0.8vw; left: 0px; top: 50%; transform: translate(0, -50%); border-radius: 50%; background: #fff;}
+.menu_wrap .menu .text {position: absolute; width: 1vw; height: 3px; left: 0.3vw; top: 50%; transform: translate(0, -50%); background: #fff;}
+.menu_wrap .menu .text a {position: absolute; width: 5vw; height: 3vh; left: 0.9vw; top: 50%; transform: translate(0, -50%); font-size: 0.8vw; text-align: center; line-height: 3vh; border: 2px solid #fff; border-radius: 0.3vw; color: #fff; font-weight: bold; font-family: 'S-CoreDream-2ExtraLight'; opacity: 1;}
+
+.menu_wrap .line1 {position: absolute; width: 0.4vw; height: 62vh; left: 50%; top: 50%; transform: translate(0, -40vh); border-radius: 0.3vw; background: #fff; z-index: 10001;}
+.menu_wrap .line2 {position: absolute; width: 0.4vw; height: 62vh; left: 50%; top: 50%; transform: translate(0, -40vh); border-radius: 0.3vw; background: #fff; opacity: 0.5;}
+
+/* cover */
+.cover {position: relative; width: 100vw; height: 100vh; z-index: 10000; }
+.cover h1 {position: absolute; width: 100vw; height: 100vh; font-size: 7vw; text-align: center; line-height: 100vh; color: #fff; font-family: 'S-CoreDream-2ExtraLight';}
+
+
+/* sec1 */
+.sec1 {text-align: center; background: rgb(236, 133, 115);}
+.sec1 .text-wrap {
+  padding-top: 40vh;
+  font-size: 8vw; font-family: 'Malssami815';
+  color: #fff; 
+}
+.sec1 .text-wrap .text1 {position: relative; display: inline-block; z-index: 60;}
+
+/* text2 */
+.sec1 .text-wrap .text2 { width: 70vw;
+  font-size: 10vw; position: relative; display: inline-block; z-index: 50;
+}
+.sec1 .text-wrap .text2 .wp { position: relative;}
+.sec1 .text-wrap .text2 .wp .circle1 {
+  position: absolute; top: 1vw; left: 30.5vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text2 .wp .circle2 {
+  position: absolute; top: 9vw; left: 36.25vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+  
+}
+.sec1 .text-wrap .text2 .wp .line {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 0.5vw; background: #fff;
+  border-radius: 5px;
+}
+/* text3 */
+.sec1 .text-wrap .text3 {
+ position: relative; display: inline-block; z-index: 40;
+}
+.sec1 .text-wrap .text3 .circle1 {
+  position: absolute; top: 2.2vw; left: 2.8vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle2 {
+  position: absolute; top: 2.5vw; left: 8vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle3 {
+  position: absolute; top: 2vw; left: 16.7vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .circle4 {
+  position: absolute; top: 2.2vw; left: 22.2vw;
+  width: 1vw; height: 1vw; background: #fff; border-radius: 50%;
+}
+.sec1 .text-wrap .text3 .line {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 0.5vw; background: #fff;
+  border-radius: 5px;
+}
+/* text4 */
+.sec1 .text-wrap .text4 {
+  position: relative; display: inline-block; z-index: 30;
+}
+.sec1 .text-wrap .text4 > span {display: inline-block;}
+/* text5 */
+.sec1 .text-wrap .text5 { background: rgb(236, 133, 115);
+  width: 60vw; height: 60vw; border-radius: 50% ;
+  text-align: center; line-height: 63vw;
+  position: relative; display: inline-block; font-size: 10vw; z-index: 20;
+}
+.sec1 .text-wrap .text5 .name {position: relative;}
+.sec1 .text-wrap .text5 .name .line1 {
+  position: absolute; left: 0; top: -1vw; 
+  width: 100%; height: 0.5vw; background: #fff;
+  border-radius: 5px;
+}
+.sec1 .text-wrap .text5 .name .line2 {
+  position: absolute; left: 0; bottom: 0; 
+  width: 100%; height: 0.5vw; background: #fff;
+  border-radius: 5px;
+}
+/* .sec1 .text-wrap .text5 .dots {position: relative; width: 100vw; height: 100vh;}
+.sec1 .text-wrap .text5 .dots > span {position: absolute; width: 2vw; height: 2vw; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 50%; background: rgb(238, 232, 213); text-align: center; line-height: 2vw; font-size: 1vw; color: rgb(240, 82, 55);} */
+
+@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* section2 */
+.sec2 {position: relative; width: 100vw; height: 200vh; background-repeat: repeat; background-color: #eee8d5; background-image: linear-gradient(to bottom, transparent, transparent 10%, #eee8d5 10%), linear-gradient(to right, #000, #000 10%, #eee8d5 10%); background-size: 10px 10px;}
+.sec2 .title {position: absolute; left: 12vw; top: 5vh; font-size: 9vw; color: #243059; font-family: 'Malssami815'; z-index: 1110;}
+
+.sec2 .ability_wrap1 {position: relative; width: 100vw; height: 100vh;}
+.sec2 .ability_wrap1 .img {position: absolute; width: 17vw; height: 36vw; left: 50%; top: 50%; transform: translate(-170%, -32%); background: url(../img/about1.png) no-repeat; background-size: cover; z-index: 185;}
+.sec2 .ability_wrap2 .bg_wrap {position: relative; width: 100vw; height: 100vh;}
+.sec2 .ability_wrap1 .bg_wrap .bg1 {position: absolute; width: 0; height: 0; border-bottom: 200vh solid #fcf4cf; border-left: 200vw solid transparent; right: 0; bottom: 0; z-index: 160;}
+.sec2 .ability_wrap1 .bg_wrap .bg2 {position: absolute; width: 0; height: 0; border-bottom: 140vh solid #fff18e; border-left: 140vw solid transparent; right: 0; bottom: 0; z-index: 170;}
+.sec2 .ability_wrap1 .bg_wrap .bg3 {position: absolute; width: 0; height: 0; border-bottom: 110vh solid #ffdf44; border-left: 110vw solid transparent; right: 0; bottom: 0; z-index: 180;}
+.sec2 .ability_wrap1 .bg_wrap .bg4 {position: absolute; width: 0; height: 0; border-bottom: 80vh solid #fac831; border-left: 80vw solid transparent; right: 0; bottom: 0; z-index: 190;}
+.sec2 .ability_wrap1 .bg_wrap .bg5 {position: absolute; width: 0; height: 0; border-bottom: 50vh solid #fab91d; border-left: 50vw solid transparent; right: 0; bottom: 0; z-index: 1100;}
+.sec2 .ability_wrap1 .text_wrap {position: relative; width: 38vw; height: 50vh; background: #fab91d;}
+.sec2 .ability_wrap1 .text_wrap .text {position: absolute; width: 30vw; left: 50%; top: 50%; text-align: justify;  transform: translate(-50%,-50%);}
+.sec2 .ability_wrap1 .text_wrap .text > span {font-size: 1.8vw; font-weight: bold; color: #fff; font-family: 'KOMACON'; z-index: 195;}
+.sec2 .ability_wrap1 .text_wrap .text > span > em {font-weight: 700; color: #fff;}
+
+.sec2 .ability_wrap2 {position: relative; width: 100vw; height: 100vh;}
+.sec2 .ability_wrap2 .img {position: absolute; width: 20vw; height: 32vw; left: 50%; top: 50%; transform: translate(-150%, -30%); background: url(../img/about2.png) no-repeat; background-size: cover; z-index: 135;}
+.sec2 .ability_wrap2 .bg_wrap {position: relative; width: 100vw; height: 100vh;}
+.sec2 .ability_wrap2 .bg_wrap .bg1 {position: absolute; width: 0; height: 0; border-bottom: 200vh solid #d1def0; border-left: 200vw solid transparent; right: 0; bottom: 0; z-index: 110;}
+.sec2 .ability_wrap2 .bg_wrap .bg2 {position: absolute; width: 0; height: 0; border-bottom: 140vh solid #acc1df; border-left: 140vw solid transparent; right: 0; bottom: 0; z-index: 120;}
+.sec2 .ability_wrap2 .bg_wrap .bg3 {position: absolute; width: 0; height: 0; border-bottom: 110vh solid #89a1d7; border-left: 110vw solid transparent; right: 0; bottom: 0; z-index: 130;}
+.sec2 .ability_wrap2 .bg_wrap .bg4 {position: absolute; width: 0; height: 0; border-bottom: 80vh solid #4a76c2; border-left: 80vw solid transparent; right: 0; bottom: 0; z-index: 140;}
+.sec2 .ability_wrap2 .bg_wrap .bg5 {position: absolute; width: 0; height: 0; border-bottom: 50vh solid rgb(60, 78, 133); border-left: 50vw solid transparent; right: 0; bottom: 0; z-index: 150;}
+.sec2 .ability_wrap2 .text_wrap {}
+.sec2 .ability_wrap2 .text_wrap .text {display: inline; font-size: 3vw; -webkit-text-fill-color: #fff; -webkit-text-stroke: 2px rgb(60, 78, 133); font-weight: 700; font-family: 'Recipekorea';}
+.sec2 .ability_wrap2 .text_wrap .text1 {position: absolute; left: 50%; top: 50%; transform: translate(5vw, -16vh); z-index: 135;}
+.sec2 .ability_wrap2 .text_wrap .text2 {position: absolute; left: 50%; top: 50%; transform: translate(5vw, -3vh); z-index: 135;}
+.sec2 .ability_wrap2 .text_wrap .text3 {position: absolute; left: 50%; top: 50%; transform: translate(5vw, 10vh); z-index: 145;}
+.sec2 .ability_wrap2 .text_wrap .text4 {position: absolute; left: 50%; top: 50%; transform: translate(5vw, 23vh); z-index: 145;}
+
+/* section3 */
+.sec3 {position: relative; z-index: 60;}
+.sec3 .site_wrap {width: 100vw; height: 100vh; position: relative; overflow: hidden; z-index: 60;}
+.sec3 .site_wrap .site0 {position: relative; float: left; width: 100vw; height: 100vh; color: #fff; background-repeat: repeat; background-color: #00a863; background-image: linear-gradient(to bottom, transparent, transparent 10%, #00a863 10%), linear-gradient(to right, #000, #000 10%, #00a863 10%); background-size: 10px 10px; z-index: 60;}
+.sec3 .site_wrap .site0 .title {display: inline-block; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 9vw; font-family: 'Malssami815'; color: #fff; z-index: 60;}
+
+.sec3 .site_wrap .site {position: relative; float: left; width: 100vw; height: 100vh; color: #fff; font-family: 'Recipekorea'; background-repeat: repeat; background-color: #00a863; background-image: linear-gradient(to bottom, transparent, transparent 10%, #00a863 10%), linear-gradient(to right, #000, #000 10%, #00a863 10%); background-size: 10px 10px; z-index: 60;}
+.sec3 .site_wrap .site .img {display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-115%,-50%); z-index: 70;}
+.sec3 .site_wrap .site2 .img {display: inline-block; position: absolute; left: 50%; top: 50%; transform: translate(-118%,-55%); z-index: 70;}
+.sec3 .site_wrap .site .img img {width: 30vw; height: 25vw;}
+
+.sec3 .site_wrap .site .text_wrap {position: absolute; width: 50vw; height: 60vh; left: 50%; top: 50%; transform: translate(-15%,-50%);}
+.sec3 .site_wrap .site2 .text_wrap {position: absolute; width: 50vw; height: 60vh; left: 50%; top: 50%; transform: translate(-10%,-50%);}
+.sec3 .site_wrap .site .text_wrap .text {position: relative; width: 50vw; height: 60vh;}
+.sec3 .site_wrap .site .text_wrap .text h2 {position: absolute; right: 0; top: 0; font-size: 5vw; font-weight: 400; -webkit-text-fill-color: #fff; -webkit-text-stroke: 3px #0c693f; z-index: 75;}
+.sec3 .site_wrap .site .text_wrap .text h3 {position: absolute; right: -0.3vw; top: 0.5vw; font-size: 5vw; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px #fff; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text p {position: absolute; width: 35vw; right: 0; top: 50%; transform: translate(0%,-30%); text-align: justify; font-size: 1.3vw; font-family: 'S-CoreDream-2ExtraLight'; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text .btn {}
+.sec3 .site_wrap .site .text_wrap .text .btn a {display: inline-block; width: 16vw; height: 3vw;  text-align: center; line-height: 3vw; border: 2px solid #fff; border-radius: 3px; font-size: 1.5vw; font-family: 'LotteMartHappy'; color: #fff; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text .btn a:hover {display: inline-block; width: 16vw; height: 3vw;  text-align: center; line-height: 3vw; border: 2px solid #fff; border-radius: 3px; font-size: 1.5vw; color: #00a863; background: #fff; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text .btn1 a {position: absolute; right: 19vw; bottom: 0; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text .btn2 a {position: absolute; right: 0vw; bottom: 0; z-index: 70;}
+.sec3 .site_wrap .site .text_wrap .text .num {position: absolute; left: 0%; top: 50%; transform: translate(-25%, -45%); font-size: 26vw; font-weight: 400; font-family: 'S-CoreDream-2ExtraLight'; opacity: 0.1; z-index: 60;}
+.sec3 .site_wrap .site2 .text_wrap .text .num {position: absolute; left: 0%; top: 50%; transform: translate(-35%, -45%); font-size: 26vw; font-weight: 400; font-family: 'S-CoreDream-2ExtraLight'; opacity: 0.1; z-index: 60;}
+
+/* line, circle position */
+.sec3 .site_wrap .site0 .circle {position: absolute; left: 70vw; top: 50%; transform: translate(0vw, -1.4vh); width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .site1 .circle {position: absolute; left: -1vw; top: 50%; transform: translate(0vw, -12vh); width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .site2 .circle {position: absolute; left: -1vw; top: 50%; transform: translate(0vw, -12vh); width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .site3 .circle {position: absolute; left: -1vw; top: 50%; transform: translate(0vw, -12vh); width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 100;}
+
+  /* site0 */
+.sec3 .site_wrap .site0 .title {position: relative;}
+.sec3 .site_wrap .site0 .title .line1 {position: absolute; right: -10%; top: -7%; width: 0.5vw; height: 57%; background: #fff;}
+.sec3 .site_wrap .site0 .title .line2 {position: absolute; left: -10%; top: -7%; width: 120%; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site0 .title .line3 {position: absolute; left: -10%; top: -7%; width: 0.5vw; height: 107%; background: #fff;}
+.sec3 .site_wrap .site0 .title .line4 {position: absolute; left: -10%; bottom: 0%; width: 120%; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site0 .title .line5 {position: absolute; right: -10%; bottom: 0%; width: 0.5vw; height: 57%; background: #fff;}
+.sec3 .site_wrap .site0 .line6 {position: absolute; right: 0; top: 50%; transform: translate(0vw, -1vh); width: 29.5vw; height: 0.5vw; background: #fff;}
+
+  /* site1 */
+.sec3 .site_wrap .site1 .line1 {position: absolute; left: 0%; top: 50%; transform: translate(0vw, -1vh); width: 11.5vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site1 .line2 {position: absolute; left: 11vw; top: 50%; transform: translate(0vw, -35.5vh); width: 0.5vw; height: 35vh; background: #fff;}
+.sec3 .site_wrap .site1 .line3 {position: absolute; left: 11vw; top: 50%; transform: translate(0vw, -35.5vh); width: 38vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site1 .line4 {position: absolute; left: 50%; top: 50%; transform: translate(-1vw, -35.5vh); width: 0.5vw; height: 24vh; background: #fff;}
+.sec3 .site_wrap .site1 .line5 {position: absolute; right: 0%; top: 50%; transform: translate(0vw, -12vh); width: 51vw; height: 0.5vw; background: #fff;}
+ 
+  /* site2 */
+.sec3 .site_wrap .site2 .line1 {position: absolute; left: 0%; top: 50%; transform: translate(0vw, -12vh); width: 10vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site2 .line2 {position: absolute; left: 10vw; top: 50%; transform: translate(0vw, -12vh); width: 0.5vw; height: 43.2vh; background: #fff;}
+.sec3 .site_wrap .site2 .line3 {position: absolute; left: 10vw; top: 50%; transform: translate(0vw, 31vh); width: 39.5vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site2 .line4 {position: absolute; left: 50%; top: 50%; transform: translate(-1vw, -12vh); width: 0.5vw; height: 43.5vh; background: #fff;}
+.sec3 .site_wrap .site2 .line5 {position: absolute; right: 0%; top: 50%; transform: translate(0vw, -12vh); width: 51vw; height: 0.5vw; background: #fff;}
+
+  /* site3 */
+.sec3 .site_wrap .site3 .line1 {position: absolute; left: 0%; top: 50%; transform: translate(0vw, -12vh); width: 11.5vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site3 .line2 {position: absolute; left: 11vw; top: 50%; transform: translate(0vw, -35.5vh); width: 0.5vw; height: 24vh; background: #fff;}
+.sec3 .site_wrap .site3 .line3 {position: absolute; left: 11vw; top: 50%; transform: translate(0vw, -35.5vh); width: 38vw; height: 0.5vw; background: #fff;}
+.sec3 .site_wrap .site3 .line4 {position: absolute; left: 50%; top: 50%; transform: translate(-1vw, -35.5vh); width: 0.5vw; height: 24vh; background: #fff;}
+.sec3 .site_wrap .site3 .line5 {position: absolute; right: 0%; top: 50%; transform: translate(0vw, -12vh); width: 51vw; height: 0.5vw; background: #fff;}
+
+
+.sec3 .site_wrap .square {width: 100vw; height: 100vh; background-repeat: repeat; background-color: #00a863; background-image: linear-gradient(to bottom, transparent, transparent 10%, #00a863 10%), linear-gradient(to right, #000, #000 10%, #00a863 10%); background-size: 10px 10px;}
+.sec3 .site_wrap .square .circle {position: absolute; left: 0vw; top: 50%; transform: translate(0vw, -12vh); width: 1vw; height: 1vw; background: #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .square .circle1 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 9vw; height: 9vw; border: 0.1vw dashed #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .square .circle2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 9vw; height: 9vw; border: 0.1vw dotted #fff; border-radius: 50%; z-index: 100;}
+.sec3 .site_wrap .square .circle3 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 9vw; height: 9vw; border: 0.1vw solid #fff; border-radius: 50%; z-index: 100;}
+
+
+/* section4 */
+.sec4 {position: relative;}
+.sec4 .title_wrap {position: relative; width: 100vw; height: 100vh; font-size: 9vw; color: #fff; font-family: 'Malssami815'; z-index: 60;}
+.sec4 .title_wrap .square {position: relative; width: 100vw; height: 50vh; background: #3a8bbb;}
+.sec4 .title_wrap .square1 {}
+.sec4 .title_wrap .square1 .tit {position: absolute; left: 23vw; bottom: 2vh;}
+.sec4 .title_wrap .square1 .line {position: absolute; width: 100%; height: 5px; left: 0; bottom: 0; background: #fff; z-index: 65;}
+.sec4 .title_wrap .square2 {}
+.sec4 .title_wrap .square2 .tit {position: absolute; left: 35vw; top: 1vh;}
+.sec4 .title_wrap .square2 .line {position: absolute; width: 100%; height: 5px; left: 0; top: 0; background: #fff; z-index: 65;}
+
+.sec4 .title_wrap .totoro_wrap {position: absolute; left: 2vw; bottom: 50vh; transform: translate(0vw, 0vw); z-index: 70;}
+.sec4 .title_wrap .totoro_wrap .circle {width: 7vw; height: 8vw; border-radius: 50% 50% 50% 50% / 60% 60% 45% 45%; background: #666;}
+
+/* ani_wrap */
+.sec4 .ani_wrap {z-index: 55;}
+.sec4 .ani_wrap .ani {width: 100vw; height: 100vh; display: flex;  align-items: center; justify-content: center; flex-direction: row; background-repeat: repeat; background-color: #2f8bc1; background-image: linear-gradient(to bottom, transparent, transparent 10%, #2f8bc1 10%), linear-gradient(to right, #000, #000 10%, #2f8bc1 10%); background-size: 10px 10px;}
+.sec4 .ani_wrap .ani .work_wrap {position: relative; width: 32vw; height: 32vw; margin-bottom: 8vh; border: 3px solid #fff; border-radius: 50%; background: transparent;}
+.sec4 .ani_wrap .ani .work_wrap .work  {position: absolute; left: 1vw; top: 1vw; width: 30vw; height: 30vw; border-radius: 50%; background: #fff;}
+
+.sec4 .ani_wrap .ani .des {position: relative; width: 25vw; height: 20vh; margin: 0 10vw 8vh 4vw; font-size: 1.5vw; font-family: 'S-CoreDream-2ExtraLight'; color: #fff; text-align: right;}
+.sec4 .ani_wrap .ani .des h2 {position: absolute; right: 0; top: 0; font-size: 2.5vw; font-weight: 400; -webkit-text-fill-color: #fff; -webkit-text-stroke: 3px #243059; font-family: 'Recipekorea'; z-index: 75;}
+/* .sec4 .ani_wrap .ani .des h3 {position: absolute; right: -0.3vw; top: 0.5vw; font-size: 3vw; font-weight: 700; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px #fff; font-family: 'Recipekorea'; z-index: 70;} */
+
+.sec4 .ani_wrap .ani .des .line {position: absolute; width: 30vw; height: 3px; left: -4vw; top: 10vh; background: #fff; border-radius: 5px;}
+.sec4 .ani_wrap .ani .des .line::after {content: ''; position: absolute; width: 1vw; height: 1vw; right: -1vw; top: 50%; transform: translate(0, -50%); background: #fff; border-radius: 50%;}
+.sec4 .ani_wrap .ani .des .btn {}
+.sec4 .ani_wrap .ani .des .btn a {display: block; position: absolute; width: 16vw; height: 3vw; right: 0; bottom: 0; text-align: center; line-height: 3vw; border: 2px solid #fff; border-radius: 3px; font-size: 1.5vw; font-family: 'LotteMartHappy'; color: #fff;}
+
+/* ani2, 4 */
+.sec4 .ani_wrap .ani2 .work_wrap {margin-bottom: 8vh;}
+.sec4 .ani_wrap .ani2 .des {margin: 0 4vw 8vh 10vw; text-align: left;}
+.sec4 .ani_wrap .ani .des h2 {left: 0;}
+.sec4 .ani_wrap .ani2 .des .line {position: absolute; left: -1vw; top: 10vh;}
+.sec4 .ani_wrap .ani2 .des .line::after {left: -1vw;}
+.sec4 .ani_wrap .ani2 .des .btn a {position: absolute; left: 0; bottom: 0;}
+.sec4 .ani_wrap .ani4 .work_wrap {margin-top: 8vh; margin-bottom: 0;}
+.sec4 .ani_wrap .ani4 .des {margin: 8vh 10vw 0 4vw;}
+
+.sec4 .ani_wrap .ani1 {}
+.sec4 .ani_wrap .ani2 {}
+.sec4 .ani_wrap .ani3 {}
+.sec4 .ani_wrap .ani4 {}
+
+
+
+/* 미디어쿼리 */
+@media (max-width: 1290px){
+  .menu_wrap .menu .text a {width: 6vw;}
+}
+
+@media (max-width: 1024px){
+  .menu_wrap .menu .text a {width: 6vw;}
+  
+}
+
+@media (max-width: 960px){
+  .menu_wrap .menu .text a {width: 7vw;}
+
+}
+
+@media (max-width: 768px){
+  .menu_wrap .menu .text a {width: 8vw;}
+
+}
+
+@media (max-width: 600px){
+  .menu_wrap .menu .text a {width: 10vw;}
+}
+
+@media (max-width: 480px){
+  .menu_wrap .menu .text a {width: 12vw;}
+}
+
+@media (max-width: 320px){
+  .menu_wrap .menu .text a {width: 14vw;}
+}
